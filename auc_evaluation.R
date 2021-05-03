@@ -1,3 +1,4 @@
+# adapted from https://github.com/jsomekh/BCeF_
 
 plotBCeF<-function(input.edata, input.covariates.df, input.gold.standard, input.edata.description = "", input.adjustment.method.description = "adjusted", color.to.use = c("black","red"))
 {
@@ -96,6 +97,6 @@ plotBCeF<-function(input.edata, input.covariates.df, input.gold.standard, input.
 
 
 
-pdf("/sc/arion/projects/psychgen2/cotea02/confound_comparisons/results/somekh_evaluation/heart_confeti_tissue_network.pdf")
+pdf("tissue_network.pdf")
 plotBCeF(input.edata=dat,input.covariates.df=adj.dat,input.gold.standard=new)
 dev.off()
